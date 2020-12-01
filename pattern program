@@ -1,0 +1,29 @@
+public class Pattern 
+{    
+    public static void main(String[] args) 
+    {
+        System.out.println("Enter no of rows");
+         
+        Scanner sc = new Scanner(System.in);
+         
+        int noOfRows = sc.nextInt();
+         
+        int value = 1;
+        int space=5;
+         
+        System.out.println(" pattern is :");
+        space--;
+        for (int i = 1; i <= noOfRows; i++) 
+        {
+        
+            for (int j = 1; j <= i; j++) 
+            {
+                System.out.print(value+"\t");
+                 
+                value++;
+            }
+             
+            System.out.println();
+        }
+    }    
+}
